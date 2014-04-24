@@ -1,0 +1,142 @@
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  background: white;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+header {
+  margin: 0 0 2% 0;
+  width: 100%;
+  background: #00ccff; }
+  header h1 {
+    padding: 0;
+    margin: 0;
+    border: 2px solid #00ccff;
+    border-top: none;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter; }
+  header ul {
+    text-align: center;
+    margin: 0 auto; }
+  header li {
+    display: inline;
+    list-style: none;
+    color: white;
+    font-size: 14px; }
+  header a {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0; }
+  header a:hover {
+    color: #58DCFC; }
+
+#logos,
+#print,
+#web,
+#advertising,
+#about,
+#contact {
+  border: 2px solid #00ccff;
+  border-top: none;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 2%; }
+
+#about,
+#contact {
+  width: 49%; }
+  #about p,
+  #contact p {
+    color: #969696;
+    font-size: 12px;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  #about h2,
+  #contact h2 {
+    font-size: 30px;
+    color: #00ccff;
+    font-weight: lighter; }
+
+#about {
+  float: left; }
+
+#contact {
+  float: right; }
+  #contact h4 {
+    font-size: 20px;
+    color: #00ccff;
+    line-height: 20px; }
+  #contact h5 {
+    font-size: 13px;
+    color: #00ccff;
+    line-height: 12px; }
+
+#logos,
+#print,
+#web,
+#advertising {
+  clear: both; }
+  #logos h2,
+  #print h2,
+  #web h2,
+  #advertising h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #00ccff;
+    font-weight: lighter; }
+  #logos li,
+  #print li,
+  #web li,
+  #advertising li {
+    width: 18.8%; }
+    #logos li a img,
+    #print li a img,
+    #web li a img,
+    #advertising li a img {
+      margin: 1%;
+      padding: 0;
+      width: 100%; }
+      #logos li a img:hover,
+      #print li a img:hover,
+      #web li a img:hover,
+      #advertising li a img:hover {
+        opacity: .7; }
+
+#web li {
+  width: 32%; }
+
+#advertising li {
+  width: 23.5%; }
+
+footer {
+  margin: 0;
+  width: 100%; }
+  footer h3 {
+    padding: 1%;
+    border: 2px solid #00ccff;
+    border-top: none;
+    background: #00ccff;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+.uptotop {
+  width: 60px;
+  position: fixed;
+  right: 10px;
+  bottom: -40px;
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -ms-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear; }
+  .uptotop:hover {
+    bottom: 10px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
