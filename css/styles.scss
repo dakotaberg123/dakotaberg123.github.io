@@ -1,25 +1,21 @@
-$blue: #00ccff;
-$hoverblue: #58DCFC;
-$grey: rgba(150,150,150,1);
+$grey: rgba(50,50,50,1);
+$hovergrey: rgba(100,100,100,1);
 $primary-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$bg-borders: 2px solid #00ccff;
+$bg-borders: 10px solid rgba(50,50,50,1);
 
 body {
 	margin: 0 auto;
-	max-width: 1000px;
 	background: white;
 	font-family: $primary-font;
 }
 
 header {
-	margin: 0 0 2% 0;
+	margin: 0;
 	width: 100%;
-	background:  $blue;
+	background:  $grey;
 	h1 {
 		padding: 0;
 		margin: 0;
-		border: $bg-borders;
-		border-top: none;
 		color: white;
 		text-align: center;
 		font-size: 60px;
@@ -51,19 +47,17 @@ header {
 #print,
 #web,
 #advertising,
-#about,
-#contact {
-	border: $bg-borders;
-	border-top: none;
+#about {
+	margin: 0 auto 2% auto;
+	border-top: $bg-borders;
 	width: 100%;
 	padding: 1%;
-	margin-bottom: 2%;
 }
 
-#about,
-#contact {
-	width: 49%;
+#about {
 	p {
+		margin: 0 auto;
+		width: 50%;
 		color: $grey;
 		font-size: 12px;
 		font-family: $primary-font;
@@ -71,28 +65,12 @@ header {
 
 	h2 {
 		font-size: 30px;
-		color: $blue;
+		color: $grey;
 		font-weight: lighter;
+		text-align: center;
 	}
 }
 
-#about {
-	float: left;
-}
-#contact {
-	float: right;
-
-	h4 {
-		font-size: 20px;
-		color: $blue;
-		line-height: 20px;
-	}
-	h5 {
-		font-size: 13px;
-		color: $blue;
-		line-height: 12px;
-	}
-}
 
 #logos,
 #print,
@@ -102,7 +80,7 @@ header {
 	h2 {
 		text-align: center;
 		font-size: 30px;
-		color: $blue;
+		color: $grey;
 		font-weight: lighter;
 	}
 
@@ -121,28 +99,44 @@ header {
 	}
 }
 
+#logos {
+	li {
+		width: 18.2%
+	}
+}
+
+#print {
+	li {
+		width: 48%
+	}
+}
 
 #web {
 	li {
-		width: 32%;
+		width: 31%;
 	}
 }
 
 #advertising {
 	li {
-		width: 23.5%;
+		width: 17.8%;
 	}
 }
 
+.clearing-thumbs {
+	margin: 0 auto;
+	width: 50%
+}
 
 footer {
 	margin: 0;
 	width: 100%;
 	h3 {
 		padding: 1%;
+		margin: 0;
 		border: $bg-borders;
 		border-top: none;
-		background:  $blue;
+		background:  $grey;
 		color: white;
 		text-align: center;
 		font-size: 15px;

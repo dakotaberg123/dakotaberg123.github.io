@@ -1,18 +1,15 @@
 body {
   margin: 0 auto;
-  max-width: 1000px;
   background: white;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
 header {
-  margin: 0 0 2% 0;
+  margin: 0;
   width: 100%;
-  background: #00ccff; }
+  background: #323232; }
   header h1 {
     padding: 0;
     margin: 0;
-    border: 2px solid #00ccff;
-    border-top: none;
     color: white;
     text-align: center;
     font-size: 60px;
@@ -37,41 +34,23 @@ header {
 #print,
 #web,
 #advertising,
-#about,
-#contact {
-  border: 2px solid #00ccff;
-  border-top: none;
-  width: 100%;
-  padding: 1%;
-  margin-bottom: 2%; }
-
-#about,
-#contact {
-  width: 49%; }
-  #about p,
-  #contact p {
-    color: #969696;
-    font-size: 12px;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-  #about h2,
-  #contact h2 {
-    font-size: 30px;
-    color: #00ccff;
-    font-weight: lighter; }
-
 #about {
-  float: left; }
+  margin: 0 auto 2% auto;
+  border-top: 10px solid #323232;
+  width: 100%;
+  padding: 1%; }
 
-#contact {
-  float: right; }
-  #contact h4 {
-    font-size: 20px;
-    color: #00ccff;
-    line-height: 20px; }
-  #contact h5 {
-    font-size: 13px;
-    color: #00ccff;
-    line-height: 12px; }
+#about p {
+  margin: 0 auto;
+  width: 50%;
+  color: #323232;
+  font-size: 12px;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+#about h2 {
+  font-size: 30px;
+  color: #323232;
+  font-weight: lighter;
+  text-align: center; }
 
 #logos,
 #print,
@@ -84,7 +63,7 @@ header {
   #advertising h2 {
     text-align: center;
     font-size: 30px;
-    color: #00ccff;
+    color: #323232;
     font-weight: lighter; }
   #logos li,
   #print li,
@@ -104,20 +83,31 @@ header {
       #advertising li a img:hover {
         opacity: .7; }
 
+#logos li {
+  width: 18.2%; }
+
+#print li {
+  width: 48%; }
+
 #web li {
-  width: 32%; }
+  width: 31%; }
 
 #advertising li {
-  width: 23.5%; }
+  width: 17.8%; }
+
+.clearing-thumbs {
+  margin: 0 auto;
+  width: 50%; }
 
 footer {
   margin: 0;
   width: 100%; }
   footer h3 {
     padding: 1%;
-    border: 2px solid #00ccff;
+    margin: 0;
+    border: 10px solid #323232;
     border-top: none;
-    background: #00ccff;
+    background: #323232;
     color: white;
     text-align: center;
     font-size: 15px;
