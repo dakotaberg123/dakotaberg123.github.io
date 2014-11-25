@@ -7,28 +7,28 @@ header {
   margin: 0;
   width: 100%;
   background: #323232; }
-  header h1 {
-    padding: 0;
-    margin: 0;
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    font-weight: lighter; }
+  header img {
+    display: block;
+    margin: 0 auto;
+    width: 20%; }
   header ul {
     text-align: center;
     margin: 0 auto; }
   header li {
     display: inline;
     list-style: none;
-    color: white;
-    font-size: 14px; }
+    color: rgba(255,255,255,.1);
+    font-size: 14px;
+    margin: 0 1%; }
   header a {
     font-size: 13px;
     color: white;
+    text-transform: uppercase;
     text-decoration: none;
     padding: 5px 0; }
   header a:hover {
-    color: #58DCFC; }
+    color: #58DCFC;
+    -webkit-transition: .1s ease; }
 
 #imagelightbox {
   position: fixed;
@@ -40,9 +40,12 @@ li {
   display: inline-block; }
 
 #logos,
+#stationary,
 #print,
 #web,
+#app,
 #advertising,
+#tvspot,
 #about,
 #quote {
   margin: 0 auto 2% auto;
@@ -55,41 +58,82 @@ li {
   width: 50%;
   color: #323232;
   font-size: 12px;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+}
+#about p a {
+  color: #323232;
+  font-weight: bold;
+  font-size: 18px;
+}
+#about p a:hover {
+  color: #58DCFC;
+}
 #about h2 {
-  font-size: 30px;
+  font-size: 27px;
   color: #323232;
   font-weight: lighter;
-  text-align: center; }
+  text-align: center; 
+}
+#about .picture {
+  background-image: url('../img/Dakota_Photo.jpg');
+  background-size: 150px;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin-left: 25%;
+  margin-right: 2%;
+  float: left;
+}
 
 #logos,
+#stationary,
 #print,
 #web,
-#advertising {
+#app,
+#advertising,
+#tvspot {
   clear: both; }
   #logos h2,
+  #stationary h2,
   #print h2,
   #web h2,
-  #advertising h2 {
+  #app h2,
+  #advertising h2,
+  #tvspot h2 {
     text-align: center;
     font-size: 27px;
     color: #323232;
     font-weight: lighter; }
+  #advertising h3,
+  #tvspot h3 {
+    text-align: center;
+    font-size: 16px; 
+    font-weight: lighter;
+    color: #323232;
+    margin-bottom: 20px; }
   #logos li,
+  #stationary li,
   #print li,
   #web li,
-  #advertising li {
-    width: 18.8%; }
+  #app li,
+  #advertising li
+  #tvspot {
+    width: 19.3%; }
     #logos li a img,
+    #stationary li a img,
     #print li a img,
     #web li a img,
+    #app li a img,
     #advertising li a img {
       margin: 1%;
       padding: 0;
       width: 100%; }
       #logos li a img:hover,
+      #stationary li a img:hover,
       #print li a img:hover,
       #web li a img:hover,
+      #app li a img:hover,
       #advertising li a img:hover {
         opacity: .7; }
 
@@ -98,46 +142,71 @@ li {
   margin: 0; }
   #quote p {
     padding: 5px 0 0 0;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 33px;
-    font-weight: lighter;
+    font-weight: normal;
     width: 100%;
     margin: 0 auto;
     text-align: center;
     color: white;
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   #quote h3 {
-    font-size: 20px;
-    font-weight: lighter;
-    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    color: #58DCFC;
     text-align: center;
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-style: italic; }
+  }
+
+#stationary li {
+  width: 49.3%; }
 
 #print {
   margin: 0 auto; }
   #print li {
-    width: 23%; }
+    width: 32.5%; }
 
 #web li {
-  width: 23%; }
+  width: 49.3%; }
 #web .weblink {
   background: #323232;
   color: white;
   padding: 2%;
   border-radius: 4px; }
 #web .weblink:hover {
-  color: #28abe2; }
+  color: #58DCFC; }
 #web h3 {
   font-size: 15px; }
 
+#app li {
+  width: 49.3%;
+}
+
+#advertising li h4,
+#print li h4,
+#stationary li h4,
+#app li h4,
+#web li h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #323232;
+  font-size: 11px;
+}
+
 #advertising li {
-  width: 17.8%; }
+  width: 32.5%; }
+
+#tvspot li {
+  width: 100%;
+}
 
 #logos ul,
+#stationary ul,
 #print ul,
 #web ul,
-#advertising ul {
+#app ul,
+#advertising ul,
+#tvspot ul {
   margin: 0 auto;
   width: 50%; }
 
@@ -172,3 +241,104 @@ footer {
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear; }
+
+
+
+/*-------------Media Queries-------------*/
+
+@media screen and (max-width: 1000px) {
+  header img {
+    width: 40%;
+  }
+  #about p {
+    width: 90%;
+    clear: both;
+  }
+  #about .picture {
+    margin: 0 auto 10px auto;
+    float: none;
+  }
+  #about p a {
+    font-size: 20px;
+  }
+  #logos ul,
+  #stationary ul,
+  #print ul,
+  #web ul,
+  #app ul,
+  #advertising ul {
+    width: 90%; 
+  }
+  #logos li {
+    width: 18.5%; 
+  }
+  #stationary li,
+  #web li {
+    width: 49%;
+  }
+  #quote p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+  }
+  #quote h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header img {
+    width: 60%;
+  }
+  #about p {
+    width: 90%;
+    clear: both;
+  }
+  #about .picture {
+    margin: 0 auto 10px auto;
+    float: none;
+  }
+  #about p a {
+    font-size: 20px;
+  }
+  #logos ul,
+  #stationary ul,
+  #print ul,
+  #web ul,
+  #app ul,
+  #advertising ul {
+    width: 90%; 
+  }
+  #logos li,
+  #advertising li {
+    width: 32%;
+  }
+  #stationary li,
+  #print li {
+    width: 49%; 
+  }
+  #web li,
+  #app li {
+    width: 49%;
+  }
+  #advertising li h4,
+  #print li h4,
+  #stationary li h4,
+  #web li h4,
+  #app li h4 {
+    margin-top: 0;
+  }
+  #quote p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+  }
+  #quote h3 {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
