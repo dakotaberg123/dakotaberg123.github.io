@@ -1,12 +1,16 @@
+/* Yellow = #fcd31c */
+
 body {
-  margin: 0 auto;
+  margin: 0 auto 0 18%;
   background: white;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: 'Alegreya Sans SC', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
 
 header {
+  display: none;
   margin: 0;
   width: 100%;
-  background: #323232; }
+  background: rgb(44,48,52); }
   header img {
     display: block;
     margin: 0 auto;
@@ -23,12 +27,80 @@ header {
   header a {
     font-size: 13px;
     color: white;
-    text-transform: uppercase;
+    
     text-decoration: none;
     padding: 5px 0; }
   header a:hover {
-    color: #58DCFC;
     -webkit-transition: .1s ease; }
+  header .logos:hover {
+    color: #FF3B30;
+  }
+  header .stationary:hover {
+    color: #FF9500;
+  }
+  header .print:hover {
+    color: #FFCC00;
+  }
+  header .advertising:hover {
+    color: #4CD964;
+  }
+  header .tvspot:hover {
+    color: #34AADC;
+  }
+  header .web:hover {
+    color: #007AFF;
+  }
+  header .app:hover {
+    color: #5856D6;
+  }
+
+
+#nav {
+  width: 18%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background: rgb(44,48,52);
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  border-bottom: 3px solid #fcd31c;
+} 
+  #nav .logowrap {
+    width: 100%;
+  } 
+    #nav .logowrap img {
+      width: 100%;
+    }
+  #nav ul {
+    margin: 0 0 0 20%;
+  } 
+    #nav ul li {
+      display: block;
+    } 
+      #nav ul li a {
+        color: rgba(255,255,255,.2);
+        font-weight: lighter;
+        letter-spacing: 1px;
+        
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -o-transition: .2s;
+      }
+        #nav ul li a:hover {
+          color: #fcd31c;
+        }
+      #nav ul li .typeform-share {
+        color: #fcd31c;
+      }
+        #nav ul li .typeform-share:hover {
+          color: #fcd31c;
+        }
+  #nav .signature {
+    opacity: .1;
+    position: absolute;
+    bottom: 0;
+  }
+
 
 #imagelightbox {
   position: fixed;
@@ -48,40 +120,43 @@ li {
 #tvspot,
 #about,
 #quote {
-  margin: 0 auto 2% auto;
-  border-top: 10px solid #323232;
+  margin: 0 auto;
   width: 100%;
-  padding: 1%; }
+  padding: 1%;
+  background: rgba(44,48,52,.95); }
 
+#about {
+  margin: 0;
+}
 #about p {
   margin: 0 auto;
-  width: 50%;
-  color: #323232;
+  width: 100%;
+  color: white;
   font-size: 12px;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+  font-family: 'Alegreya Sans SC', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
 }
 #about p a {
-  color: #323232;
+  color: white;
   font-weight: bold;
   font-size: 18px;
 }
 #about p a:hover {
-  color: #58DCFC;
+  color: #fcd31c;
 }
 #about h2 {
   font-size: 27px;
-  color: #323232;
+  color: white;
   font-weight: lighter;
   text-align: center; 
 }
 #about .picture {
   background-image: url('../img/Dakota_Photo.jpg');
-  background-size: 150px;
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-  margin-left: 25%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 0;
   margin-right: 2%;
   float: left;
 }
@@ -103,14 +178,13 @@ li {
   #tvspot h2 {
     text-align: center;
     font-size: 27px;
-    color: #323232;
-    font-weight: lighter; }
+    color: rgb(255,255,255);
+    font-family: 'Alegreya Sans SC', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   #advertising h3,
   #tvspot h3 {
     text-align: center;
-    font-size: 16px; 
-    font-weight: lighter;
-    color: #323232;
+    font-size: 16px;
+    color: #fcd31c;
     margin-bottom: 20px; }
   #logos li,
   #stationary li,
@@ -128,18 +202,20 @@ li {
     #advertising li a img {
       margin: 1%;
       padding: 0;
-      width: 100%; }
+      width: 100%;
+      opacity: .7; }
       #logos li a img:hover,
       #stationary li a img:hover,
       #print li a img:hover,
       #web li a img:hover,
       #app li a img:hover,
       #advertising li a img:hover {
-        opacity: .7; }
+        opacity: 1; }
 
 #quote {
-  background: #323232;
-  margin: 0; }
+  background: rgb(44,48,52);
+  margin: 0;
+  border-bottom: 3px solid #fcd31c; }
   #quote p {
     padding: 5px 0 0 0;
     font-size: 24px;
@@ -148,14 +224,14 @@ li {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    color: white;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    color: rgba(255,255,255,.4);
+    font-family: 'Alegreya Sans SC', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   #quote h3 {
     font-size: 16px;
-    font-weight: bold;
-    color: #58DCFC;
+    font-weight: lighter;
+    color: #fcd31c;
     text-align: center;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Alegreya Sans SC', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   }
 
 #stationary li {
@@ -169,12 +245,12 @@ li {
 #web li {
   width: 49.3%; }
 #web .weblink {
-  background: #323232;
+  background: #fcd31c;
   color: white;
   padding: 2%;
   border-radius: 4px; }
 #web .weblink:hover {
-  color: #58DCFC; }
+  color: #fcd31c; }
 #web h3 {
   font-size: 15px; }
 
@@ -189,7 +265,7 @@ li {
 #web li h4 {
   text-align: center;
   font-weight: bold;
-  color: #323232;
+  color: white;
   font-size: 11px;
 }
 
@@ -208,21 +284,21 @@ li {
 #advertising ul,
 #tvspot ul {
   margin: 0 auto;
-  width: 50%; }
+  width: 100%; }
 
 footer {
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 3px solid #fcd31c; }
   footer h3 {
     padding: 1%;
     margin: 0;
-    border: 10px solid #323232;
     border-top: none;
-    background: #323232;
+    background: rgb(44,48,52);
     color: white;
     text-align: center;
     font-size: 15px;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: 'Alegreya Sans SC', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
 .uptotop {
   width: 40px;
