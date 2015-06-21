@@ -5,6 +5,9 @@ body {
   background: white;
   font-family: 'Alegreya Sans SC', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
+a {
+  color: #fcd31c;
+}
 
 header {
   display: none;
@@ -413,8 +416,3 @@ footer {
     font-size: 12px;
   }
 }
-
-
-
-
-
